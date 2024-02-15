@@ -2,6 +2,7 @@ import { Environment,OrbitControls,PerspectiveCamera } from "@react-three/drei";
 import { Suspense, useEffect, useState } from "react";
 
 import Track from "./Track";
+import Ground from "./Ground";
 
 export default function Scene () {
     const [thirdPerson, setThirdPerson] = useState(false);
@@ -20,6 +21,7 @@ export default function Scene () {
             )}
 
             <Track/>
+            <Ground/>
         </Suspense>
     )
 }
