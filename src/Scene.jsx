@@ -3,6 +3,7 @@ import { Suspense, useEffect, useState } from "react";
 
 import Track from "./Track";
 import Ground from "./Ground";
+import Car from "./Car";
 
 export default function Scene () {
     const [thirdPerson, setThirdPerson] = useState(false);
@@ -20,6 +21,7 @@ export default function Scene () {
                 <OrbitControls target={[-2.64, -0.71, 0.03]} />
             )}
 
+            <Car/>
             <Track/>
             <Ground/>
         </Suspense>
